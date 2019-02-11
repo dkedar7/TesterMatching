@@ -1,4 +1,4 @@
-# TesterMatching
+# Tester Matching WebApp
 Tester-matching algorithm is one of the major features of the Applause platform. When particular criteria are selected according to a Customer's needs, this algorithm comes up with a list of testers, sorted by the most experienced, using a stored tester database. This repository holds all the codes for a Python (Flask)-based web application to demonstrate the tester-matching algorithm. At its heart, this app matches given selection criteria with the database, queries relevant results, sorts them by their experience, and displays them in a tabulated manner.
  <br>
  <br>
@@ -17,4 +17,46 @@ Pandas module of python has been chosen for querying and sort. Querying speed of
 
 ## Steps to Use this WebApp
 ### 1. Install Python.
-Install Python (version =>3.5). This app is built on is 3.7.0, so this is the recommended version.
+Install Python (version =>3.5) fom https://www.python.org/downloads/release. This app is built on is 3.7.0, so this is the recommended version. Choose your build, run the exucatable, and add python's path to the list of PATH variables. Open the command line interpreter and type 'python' to see if python's path has been added to PATH.
+
+### 2. Get pip.
+Open the command line interpreter or CLI (Terminal on MacOS and Command Prompt on Windows. Check if pip is already installed by typing the command
+'''bash
+python -m pip --version
+'''
+If pip is not installed, you can get it from https://pip.pypa.io/en/stable/installing/. Restart the CLI.
+
+### 3. Clone this repository.
+To clone this repository from the CLI, use
+'''bash
+git clone https://github.com/dkedar7/TesterMatching
+'''
+You may also choose to manually download the contents of this repository in a zipped folder and then unzip the contents.
+
+### 4. Create a virtual environment
+Create an isolated virtual environment for this application.
+To install the module ``` virtualenv ```, run this
+```bash
+cd TesterMatching
+python -m pip install virtualenv
+python -m virtualenv TesterMatchingApp
+```
+Activate this environment,
+Windows:
+```bash
+TesterMatchingApp\Source\Activate
+```
+Mac:
+```bash
+source TesterMatchingApp/bin/activate
+```
+
+### 5. Install all required modules from requirements.txt
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 6. Run the app
+```bash
+python -m flask run
+```
