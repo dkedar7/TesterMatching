@@ -7,11 +7,8 @@ Tester-matching algorithm is one of the major features of the Applause platform.
  <br>
 ```
 1. bugs.csv: CSV of all the Bugs filed by a Tester. Each row corresponds to a single Bug filed by a Tester and contains the Tester and the Device the Bug was reported on.
-<br>
 2. devices.csv: CSV of all available Devices. Each row corresponds to a single Device - This is all the possible Device types a Tester can have.
-<br>
 3. tester_device.csv: CSV mapping Testers to Devices. Each row maps a Tester to a Device.
-<br>
 4. testers.csv: CSV of of all Testers. Each row corresponds to a Tester.
 ```
 
