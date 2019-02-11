@@ -13,3 +13,8 @@ Tester-matching algorithm is one of the major features of the Applause platform.
 ```
 ## Querying Tool and Methodology
 Pandas module of python has been chosen for querying and sort. Querying speed of Pandas is usually comparable to SQL for datasets lesser than about a million in size. In addition, it is more convenient to use Pandas for flat files like .csv since it avoids the hassle of creating a database and storing tables. Pandas is sufficiently fast for the given data size, and also allows easy datastructure manipulation in python.
+
+
+## Steps to Use this WebApp
+### 1. Install Python.
+Install Python (version =>3.5). This app is built on is 3.7.0, so this is the recommended version.
