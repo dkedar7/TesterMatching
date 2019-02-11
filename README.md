@@ -20,7 +20,6 @@ Pandas module of python has been chosen for querying and sort. Querying speed of
 If you are a Linus/MacOS user and already have Python (version =>3.5), pip and git, run the following commands from your command line interpreter (CLI):
 ```bash
 git clone https://github.com/dkedar7/TesterMatching
-cd TesterMatching
 sh RunApp.sh
 ```
 
