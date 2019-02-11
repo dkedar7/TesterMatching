@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html class ="container">
+
+   <head>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+   </head>
+
+   <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+         <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Tester Maching</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+         </div>
+      </header>
+   </div>
+
+   <body id="center">
+      <div style="width: 50%; float: left; padding-top: 80px; padding-left: 200px; ">
+         <form action="/submit" method="post">
+
+            <!-- Add devices -->
+            <div style="width: 25%; float: left;">
+               <h4> Select devices </h4>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">All
+               <input type="checkbox" name="device" value="all_devices" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">Droid DNA
+               <input type="checkbox" name="device" value="Droid DNA" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">Droid Razor
+               <input type="checkbox" name="device" value="Droid Razor"class="mdl-checkbox__input" >
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">Galaxy S3
+               <input type="checkbox" name="device" value="Galaxy S3" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">Galaxy S4
+               <input type="checkbox" name="device" value="Galaxy S4" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">HTC One
+               <input type="checkbox" name="device" value="HTC One" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">iPhone 3
+               <input type="checkbox" name="device" value="iPhone 3" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">iPhone 4
+               <input type="checkbox" name="device" value="iPhone 4" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">iPhone 4S
+               <input type="checkbox" name="device" value="iPhone 4S" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">iPhone 5
+               <input type="checkbox" name="device" value="iPhone 5" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">Nexus 4
+               <input type="checkbox" name="device" value="Nexus 4" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+            </div>
+
+            <!-- Add countries -->
+            <div style="width: 25%; float: left;">
+               <h4> Select countries</h4>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">All
+               <input type="checkbox" name="country" value="all_countries" class="mdl-checkbox__input">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">GB
+               <input type="checkbox" name="country" class="mdl-checkbox__input" value="GB">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">JP
+               <input type="checkbox" name="country" class="mdl-checkbox__input" value="JP">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">US
+               <input type="checkbox" name="country" class="mdl-checkbox__input" value="US">
+               <span class="mdl-checkbox__label"></span>
+               </label>
+
+               <!-- Add button to submit -->
+               <div>
+                  <button class="get_result mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit" style="vertical-align:middle">
+                  <span>Submit</span>
+                  </button>
+               </div>
+            </div>
+         </form>
+      </div>
+
+      <!-- Render output table -->
+      <div id="result" style="width: 20%; float: left; padding-top: 80px; margin-left:-200px">
+         <h4>Qualified Testers</h4>
+         {% for table in tables %}
+         {{titles[loop.index]}}
+         {{ table|safe }}
+         {% endfor %}
+      </div>
+   </body>
+</html>
