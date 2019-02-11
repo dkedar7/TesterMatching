@@ -16,11 +16,18 @@ Pandas module of python has been chosen for querying and sort. Querying speed of
 
 
 ## Steps to Use this WebApp
+
+If you are a Linus/MacOS user and already have Python (version =>3.5), pip and git, run the following commands from your command line interpreter (CLI):
+```bash
+git clone https://github.com/dkedar7/TesterMatching
+sh RunApp.sh
+```
+
 ### 1. Install Python.
 Install Python (version =>3.5) fom https://www.python.org/downloads/release. This app is built on is 3.7.0, so this is the recommended version. Choose your build, run the exucatable, and add python's path to the list of PATH variables. Open the command line interpreter and type 'python' to see if python's path has been added to PATH.
 
 ### 2. Get pip.
-Open the command line interpreter or CLI (Terminal on MacOS and Command Prompt on Windows. Check if pip is already installed by typing the command
+Open the CLI (Terminal on MacOS and Command Prompt on Windows. Check if pip is already installed by typing the command
 '''bash
 python -m pip --version
 '''
@@ -28,9 +35,9 @@ If pip is not installed, you can get it from https://pip.pypa.io/en/stable/insta
 
 ### 3. Clone this repository.
 To clone this repository from the CLI, use
-'''bash
+```bash
 git clone https://github.com/dkedar7/TesterMatching
-'''
+```
 You may also choose to manually download the contents of this repository in a zipped folder and then unzip the contents.
 
 ### 4. Create a virtual environment
