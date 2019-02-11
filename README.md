@@ -5,7 +5,7 @@ Tester-matching algorithm is one of the major features of the Applause platform.
  ## About the data
  The data used to query from is stored in 5 different .csv files.
  <br>
- '''
+```
 1. bugs.csv: CSV of all the Bugs filed by a Tester. Each row corresponds to a single Bug
 filed by a Tester and contains the Tester and the Device the Bug was reported on.
 <br>
@@ -15,7 +15,7 @@ This is all the possible Device types a Tester can have.
 3. tester_device.csv: CSV mapping Testers to Devices. Each row maps a Tester to a Device.
 <br>
 4. testers.csv: CSV of of all Testers. Each row corresponds to a Tester.
-'''
+```
 
 ```bash
 import numpy as np
