@@ -79,7 +79,7 @@ Pandas module of python has been chosen for querying and sort. Querying speed of
 The following methodology has been used to do the entire querying task:
 <br>
 1. Query testers by the desired device(s).
-1.1. Find device_Ids of all devices in the desired 'device_list'.
+\t 1.1. Find device_Ids of all devices in the desired 'device_list'.
 1.2. Query tester_Ids of the testers who use these devices.
 1.3. Query testers corresponding to these tester_Ids.
 2. From the bugs, keep only the bugs corresponding to devices in 'device_list'.
