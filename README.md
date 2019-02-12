@@ -132,4 +132,5 @@ python -m flask run
 ```
 Copy and paste the link displayed on the CLI in a browser. You can select your criteria and get the queried table displayed on the side.
 
-<img src
+<img src="https://github.com/dkedar7/TesterMatching/blob/master/AppLayout.png" alt="App Layout">
+
