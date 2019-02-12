@@ -8,9 +8,55 @@ result = query(['US','GB'],['iPhone 5', 'Galaxy S4','HTC One'])
 print (result)
 ```
 returns
-```
 
-
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Country</th>
+      <th>Number of Bugs Tested</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Miguel</td>
+      <td>Bautista</td>
+      <td>US</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Stanley</td>
+      <td>Chen</td>
+      <td>GB</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Leonard</td>
+      <td>Sutton</td>
+      <td>GB</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Darshini</td>
+      <td>Thiagarajan</td>
+      <td>GB</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Michael</td>
+      <td>Lubavin</td>
+      <td>US</td>
+      <td>99</td>
+    </tr>
+  </tbody>
+</table>
 
  <br>
  <br>
