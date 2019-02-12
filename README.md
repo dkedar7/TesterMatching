@@ -68,3 +68,5 @@ python -m pip install -r requirements.txt
 ```bash
 python -m flask run
 ```
+
+The final app looks like this-
