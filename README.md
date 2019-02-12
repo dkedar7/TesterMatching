@@ -77,7 +77,7 @@ possible Device types a Tester can have.
 Pandas module of python has been chosen for querying and sort. Querying speed of Pandas is usually comparable to SQL for datasets lesser than about a million in size. In addition, it is more convenient to use Pandas for flat files like .csv since it avoids the hassle of creating a database and storing tables. Pandas is sufficiently fast for the given data size, and also allows easy datastructure manipulation in python.
 
 
-## Steps to Use this WebApp
+## How to install and run this app
 
 If you are a Linus/MacOS user and already have Python (version =>3.5), pip and git, run the following commands from your command line interpreter (CLI):
 ```bash
@@ -86,24 +86,24 @@ cd TesterMatching
 source RunApp.sh
 ```
 
-### 1. Install Python.
+#### 1. Install Python.
 Install Python (version =>3.5) fom https://www.python.org/downloads/release. This app is built on is 3.7.0, so this is the recommended version. Choose your build, run the exucatable, and add python's path to the list of PATH variables. Open the command line interpreter and type 'python' to see if python's path has been added to PATH.
 
-### 2. Get pip.
+#### 2. Get pip.
 Open the CLI (Terminal on MacOS and Command Prompt on Windows. Check if pip is already installed by typing the command
 '''bash
 python -m pip --version
 '''
 If pip is not installed, you can get it from https://pip.pypa.io/en/stable/installing/. Restart the CLI.
 
-### 3. Clone this repository.
+#### 3. Clone this repository.
 To clone this repository from the CLI, use
 ```bash
 git clone https://github.com/dkedar7/TesterMatching
 ```
 You may also choose to manually download the contents of this repository in a zipped folder and then unzip the contents.
 
-### 4. Create a virtual environment
+#### 4. Create a virtual environment
 Install ``` virtualenv ``` and create an isolated virtual environment.
 ```bash
 cd TesterMatching
@@ -120,12 +120,12 @@ Mac:
 source TesterMatchingApp/bin/activate
 ```
 
-### 5. Install all required modules from requirements.txt
+#### 5. Install all required modules from requirements.txt
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### 6. Run the app
+#### 6. Run the app
 ```bash
 python -m flask run
 ```
