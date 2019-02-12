@@ -21,7 +21,7 @@ If you are a Linus/MacOS user and already have Python (version =>3.5), pip and g
 ```bash
 git clone https://github.com/dkedar7/TesterMatching
 cd TesterMatching
-sh RunApp.sh
+source RunApp.sh
 ```
 
 ### 1. Install Python.
