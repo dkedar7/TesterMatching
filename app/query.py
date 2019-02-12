@@ -91,3 +91,5 @@ def query(country_list,device_list):
 
     # Rename columns
     query_by_country.columns = ['First Name','Last Name','Country','Number of Bugs Tested']
+
+    return query_by_country
