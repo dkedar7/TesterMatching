@@ -44,7 +44,7 @@ def query(country_list,device_list):
     # If 'device_list' contains 'all_devices', select all rows
     if 'all_devices' in device_list:
         query_by_device = testers[['testerId','firstName','lastName','country']]
-        testerIds_using_devices = tester_device.testerId.unique()
+        device_id = tester_device.deviceId.unique()
 
     # If 'device_list' does not contain 'all_devices', select the relevant rows
     else:
@@ -61,7 +61,7 @@ def query(country_list,device_list):
                                                                                  'country']]
 
     # 2. Keep only the bugs corresponding to devices in 'device_list'.
-    relevant_bugs = bugs[bugs.testerId.isin(testerIds_using_devices)]
+    relevant_bugs = bugs[bugs.deviceId.isin(device_id)]
 
     # 3. Add an integer column to indicate how many 'relevant_bugs' were tested by testers.
     query_by_device['BugsTested'] = relevant_bugs.groupby('testerId').agg({'bugId':'count'}).astype(int).values
