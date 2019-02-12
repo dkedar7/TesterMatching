@@ -54,7 +54,7 @@ def query(country_list,device_list):
         testerIds_using_devices = tester_device[tester_device.deviceId.isin(device_id)].testerId.unique()
 
         # 1.3. Query testers corresponding to these tester_Ids
-        query_by_device = testers[testers.testerId.isin(testers_using_devices)][['testerId',
+        query_by_device = testers[testers.testerId.isin(testerIds_using_devices)][['testerId',
                                                                                  'firstName',
                                                                                  'lastName',
                                                                                  'country']]
