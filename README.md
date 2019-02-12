@@ -1,5 +1,17 @@
 # Tester Matching WebApp
 Tester-matching algorithm is one of the major features of the Applause platform. When particular criteria are selected according to a Customer's needs, this algorithm comes up with a list of testers, sorted by the most experienced, using a stored tester database. This repository holds all the codes for a Python (Flask)-based web application to demonstrate the tester-matching algorithm. At its heart, this app matches given selection criteria with the database, queries relevant results, sorts them by their experience, and displays them in a tabulated manner.
+
+For example, if a customer is interested in users from 'US' and 'GB' only, and with experience with testing in 'iPhone 5', 'Galaxy S4', and 'HTC One', then running the code:
+```python
+from app.query import query
+result = query(['US','GB'],['iPhone 5', 'Galaxy S4','HTC One'])
+print (result)
+```
+returns
+```
+
+
+
  <br>
  <br>
  ## About the Data
