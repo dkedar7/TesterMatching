@@ -75,6 +75,18 @@ possible Device types a Tester can have.
 ```
 ## Querying Tool and Methodology
 Pandas module of python has been chosen for querying and sort. Querying speed of Pandas is usually comparable to SQL for datasets lesser than about a million in size. In addition, it is more convenient to use Pandas for flat files like .csv since it avoids the hassle of creating a database and storing tables. Pandas is sufficiently fast for the given data size, and also allows easy datastructure manipulation in python.
+<br>
+The following methodology has been used to do the entire querying task:
+<br>
+1. Query testers by the desired device(s).
+1.1. Find device_Ids of all devices in the desired 'device_list'.
+1.2. Query tester_Ids of the testers who use these devices.
+1.3. Query testers corresponding to these tester_Ids.
+2. From the bugs, keep only the bugs corresponding to devices in 'device_list'.
+3. Add a column to 'testers' indicate how many 'relevant_bugs' were tested by testers.
+4. Query by the countries of interest.
+4.1. Keep only the testers from countries in 'country_list'.
+5. Sort by the number of 'relevant_bugs' tested.
 
 
 ## How to install and run this app
