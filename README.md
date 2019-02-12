@@ -6,9 +6,14 @@ Tester-matching algorithm is one of the major features of the Applause platform.
  The data used to query from is stored in 5 different .csv files.
  <br>
 ```
-1. bugs.csv: CSV of all the Bugs filed by a Tester. Each row corresponds to a single Bug filed by a Tester and contains the Tester and the Device the Bug was reported on.
-2. devices.csv: CSV of all available Devices. Each row corresponds to a single Device - This is all the possible Device types a Tester can have.
+1. bugs.csv: CSV of all the Bugs filed by a Tester. Each row corresponds to a single Bug filed by a Tester 
+and contains the Tester and the Device the Bug was reported on.
+
+2. devices.csv: CSV of all available Devices. Each row corresponds to a single Device - This is all the 
+possible Device types a Tester can have.
+
 3. tester_device.csv: CSV mapping Testers to Devices. Each row maps a Tester to a Device.
+
 4. testers.csv: CSV of of all Testers. Each row corresponds to a Tester.
 ```
 ## Querying Tool and Methodology
@@ -42,8 +47,7 @@ git clone https://github.com/dkedar7/TesterMatching
 You may also choose to manually download the contents of this repository in a zipped folder and then unzip the contents.
 
 ### 4. Create a virtual environment
-Create an isolated virtual environment for this application.
-To install the module ``` virtualenv ```, run this
+Install ``` virtualenv ``` and create an isolated virtual environment.
 ```bash
 cd TesterMatching
 python -m pip install virtualenv
@@ -68,3 +72,5 @@ python -m pip install -r requirements.txt
 ```bash
 python -m flask run
 ```
+
+The final app looks like this-
