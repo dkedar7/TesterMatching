@@ -47,8 +47,7 @@ git clone https://github.com/dkedar7/TesterMatching
 You may also choose to manually download the contents of this repository in a zipped folder and then unzip the contents.
 
 ### 4. Create a virtual environment
-Create an isolated virtual environment for this application.
-To install the module ``` virtualenv ```, run this
+Install ``` virtualenv ``` and create an isolated virtual environment.
 ```bash
 cd TesterMatching
 python -m pip install virtualenv
