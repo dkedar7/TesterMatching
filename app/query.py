@@ -44,6 +44,7 @@ def query(country_list,device_list):
     # If 'device_list' contains 'all_devices', select all rows
     if 'all_devices' in device_list:
         query_by_device = testers[['testerId','firstName','lastName','country']]
+        testerIds_using_devices = tester_device.testerId.unique()
 
     # If 'device_list' does not contain 'all_devices', select the relevant rows
     else:
