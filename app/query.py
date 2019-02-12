@@ -39,8 +39,6 @@ def query(country_list,device_list):
 
 
     '''
-    country_list, device_list = ['US','GB'],['all_devices','iPhone 5','Galaxy S4','HTC One']
-
     # 1. Query by device(s)
 
     # If 'device_list' contains 'all_devices', select all rows
