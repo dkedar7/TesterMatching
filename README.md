@@ -129,5 +129,6 @@ python -m pip install -r requirements.txt
 ```bash
 python -m flask run
 ```
+Copy and paste the link displayed on the CLI in a browser. You can select your criteria and get the queried table displayed on the side.
 
-The final app looks like this-
+<img src
