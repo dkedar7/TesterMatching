@@ -39,6 +39,8 @@ def query(country_list,device_list):
 
 
     '''
+    country_list, device_list = ['US','GB'],['all_devices','iPhone 5','Galaxy S4','HTC One']
+
     # 1. Query by device(s)
 
     # If 'device_list' contains 'all_devices', select all rows
@@ -61,7 +63,7 @@ def query(country_list,device_list):
                                                                                  'country']]
 
     # 2. Keep only the bugs corresponding to devices in 'device_list'.
-    relevant_bugs = bugs[bugs.deviceId.isin(device_id)]
+    relevant_bugs = bugs[bugs.testerId.isin(testerIds_using_devices)]
 
     # 3. Add an integer column to indicate how many 'relevant_bugs' were tested by testers.
     query_by_device['BugsTested'] = relevant_bugs.groupby('testerId').agg({'bugId':'count'}).astype(int).values
