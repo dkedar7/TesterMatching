@@ -58,11 +58,10 @@ returns
   </tbody>
 </table>
 
- <br>
- <br>
+
  ## About the Data
  The data used to query from is stored in 5 different .csv files.
- <br>
+ 
 ```
 1. bugs.csv: CSV of all the Bugs filed by a Tester. Each row corresponds to a single Bug filed by a Tester 
 and contains the Tester and the Device the Bug was reported on.
