@@ -22,38 +22,38 @@ returns
   <tbody>
     <tr>
       <th>1</th>
-      <td>Miguel</td>
-      <td>Bautista</td>
-      <td>US</td>
-      <td>114</td>
-    </tr>
-    <tr>
-      <th>2</th>
       <td>Stanley</td>
       <td>Chen</td>
       <td>GB</td>
       <td>110</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>2</th>
       <td>Leonard</td>
       <td>Sutton</td>
       <td>GB</td>
-      <td>106</td>
+      <td>51</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>3</th>
       <td>Darshini</td>
       <td>Thiagarajan</td>
       <td>GB</td>
-      <td>104</td>
+      <td>51</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>4</th>
       <td>Michael</td>
       <td>Lubavin</td>
       <td>US</td>
-      <td>99</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Miguel</td>
+      <td>Bautista</td>
+      <td>US</td>
+      <td>30</td>
     </tr>
   </tbody>
 </table>
